@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<title>开始使用layer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script src="layer/layer.js"></script>
+<script>
+//弹出一个页面层
+function e(){
+	
+  layer.open({
+  type: 2,
+  title: '图片上传',
+  maxmin: true,
+  shadeClose: true, //点击遮罩关闭层
+  area : ['600px' , '360px'],
+  content: 'iframe.html'
+  });
+}
+</script>
+
+<body>
+
+<button  type="button" onclick="e()">点我弹窗</button>
+
+</body>
+</html>
